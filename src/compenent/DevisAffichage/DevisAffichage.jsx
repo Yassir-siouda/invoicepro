@@ -200,7 +200,7 @@ const DevisAffichage = () => {
                   <td className={getStatusClass(devis.Status)}>{devis.Status}</td>
                   <td>{devis.Commentaire}</td>
                   <td>
-                    <button className="edit-btn" onClick={() => handleEdit(devis)}>Edit</button>
+                    <button className="edit-btn" onClick={() => handleEdit(devis)}>Modifier</button>
                     <button className="view-btn" onClick={() => handleShow(devis)}>Voir</button>
                     <button className="delete-btn" onClick={() => handleDelete(devis.id)}>Supprimer</button>
                     <button className="convert-btn" onClick={() => handleConvertToFacture(devis.id)}>Convertir en Facture</button>
