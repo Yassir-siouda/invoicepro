@@ -5,7 +5,7 @@ import supabase from '../../supabase';
 import './connexion.css';
 import logo from '../images/InvoicePro.png';
 
-const LoginPage = () => {
+const ConnexionPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -83,4 +83,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default ConnexionPage;

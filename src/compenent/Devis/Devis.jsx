@@ -50,7 +50,7 @@ const Devis = ({ userId }) => {
         TotalHT: '',
         TVA: '20',
         TotalTTC: '',
-        user_id: userId // Réinitialiser l'ID de l'utilisateur
+        user_id: userId 
       });
     }
   };

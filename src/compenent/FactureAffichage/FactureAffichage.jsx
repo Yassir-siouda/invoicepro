@@ -185,7 +185,7 @@ const FactureAffichage = () => {
                       />
                     ) : (
                       facture.TotalHT
-                    )}
+                    )}€
                   </td>
                   <td>
                     {editFactureId === facture.id ? (
@@ -197,10 +197,10 @@ const FactureAffichage = () => {
                       />
                     ) : (
                       facture.TVA
-                    )}
+                    )}%
                   </td>
                   <td>
-                    {editFactureId === facture.id ? formData.TotalTTC : facture.TotalTTC}
+                    {editFactureId === facture.id ? formData.TotalTTC : facture.TotalTTC}€
                   </td>
                   <td>
                     {editFactureId === facture.id ? (
@@ -229,14 +229,14 @@ const FactureAffichage = () => {
                   <td>
                     {editFactureId === facture.id ? (
                       <>
-                        <button className="save-btn action-btn" onClick={handleSave}>Save</button>
-                        <button className="cancel-btn action-btn" onClick={handleCancel}>Cancel</button>
+                        <button className="save-btn action-btn" onClick={handleSave}>Modifier</button>
+                        <button className="cancel-btn action-btn" onClick={handleCancel}>Annuler</button>
                       </>
                     ) : (
                       <>
-                        <button className="edit-btn action-btn" onClick={() => handleEdit(facture)}>Edit</button>
-                        <button className="delete-btn action-btn" onClick={() => handleDelete(facture.id)}>Delete</button>
-                        <button className="print-btn action-btn" onClick={handlePrint}>Print</button>
+                        <button className="edit-btn action-btn" onClick={() => handleEdit(facture)}>Modifier</button>
+                        <button className="delete-btn action-btn" onClick={() => handleDelete(facture.id)}>Supprimer</button>
+                        <button className="print-btn action-btn" onClick={handlePrint}>Imprimer</button>
                       </>
                     )}
                   </td>

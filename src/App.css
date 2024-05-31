@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: #fff; /* Light theme background */
+  background: #fff; 
 }
 
 .login-container {
@@ -24,7 +24,7 @@
 }
 
 .login-logo img {
-  width: 80px; /* Adjust the size as needed */
+  width: 80px; 
   margin-bottom: 1rem;
 }
 
@@ -85,18 +85,18 @@
 
 .image-section {
   flex: 1;
-  background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); /* Replace with your image path */
+  background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); 
   background-size: cover;
   background-position: center;
 }
 
-/* Add responsive design */
+
 @media (max-width: 768px) {
   .login-page {
     flex-direction: column;
   }
 
   .image-section {
-    height: 50vh; /* Adjust the height of the image section on smaller screens */
+    height: 50vh; 
   }
 }

@@ -26,10 +26,10 @@ const InscriptionPage = () => {
         throw new Error('Cet email est déjà enregistré.');
       }
 
-      // Hacher le mot de passe
+   
       const hashedPassword = CryptoJS.SHA256(registerPassword).toString();
 
-      // Insertion de l'utilisateur dans la table "Authentification" avec Supabase
+      
       const { data, error } = await supabase
         .from('Authentification')
         .insert([{ email: registerEmail, password: hashedPassword }]);

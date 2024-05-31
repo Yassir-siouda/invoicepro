@@ -194,9 +194,9 @@ const DevisAffichage = () => {
               {filteredDevis.map((devis) => (
                 <tr key={devis.id}>
                   <td>{devis.Client}</td>
-                  <td>{devis.TotalHT}</td>
-                  <td>{devis.TVA}</td>
-                  <td>{devis.TotalTTC}</td>
+                  <td>{devis.TotalHT} € </td>
+                  <td>{devis.TVA}% </td>
+                  <td>{devis.TotalTTC} €</td>
                   <td className={getStatusClass(devis.Status)}>{devis.Status}</td>
                   <td>{devis.Commentaire}</td>
                   <td>

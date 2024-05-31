@@ -1,4 +1,3 @@
-/* Facture.css */
 .appdevis {
   display: flex;
   height: 100vh;
@@ -21,7 +20,7 @@
   color: #2c3e50;
 }
 
-/* Form styles */
+
 .devis-form {
   display: flex;
   flex-direction: column;
